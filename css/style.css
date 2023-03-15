@@ -1,0 +1,65 @@
+:root{
+    --opensans : "Open Sans", sans-serif;
+    --raleway : "Raleway", sans-serif;
+    --orange: #ff8b38;
+    --gray: #cccccc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* a {
+    text-decoration: none;
+    color: white;
+}
+
+section{
+    padding: 0 10%;
+}
+header{
+    background-color: black;
+    color: white;
+
+}
+header section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1vh 10%;
+    margin: 0 auto;
+    align-items: center;
+}
+header .logo{
+    text-transform: uppercase;
+    font-family: var(--opensans);
+    font-weight: 700;
+    font-size: 200%;
+}
+
+header .logo span{
+    font-weight: 400;
+    font-size: 100%;
+    color: var(--orange);
+}
+
+
+
+header nav ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    list-style-type: none;
+    width: 100%;
+}
+header nav ul a{
+    color: var(--gray);
+    transition: all 0.6s;
+    display: block;
+    text-align: center;
+}
+
+header nav ul li a:hover {
+    color: var(--orange); 
+    transform: scale(1.2);
+}
